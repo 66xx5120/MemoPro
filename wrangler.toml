@@ -1,0 +1,12 @@
+name = "memo-pro"
+type = "javascript"
+account_id = "your_account_id"
+workers_dev = true
+compatibility_date = "2024-01-01"
+
+kv_namespaces = [
+  { binding = "MEMO_KV", id = "memo-kv-id" }
+]
+
+[[triggers]]
+schedule = { cron = "0 0,12 * * *" }  # 每天UTC 0点和12点检查提醒
