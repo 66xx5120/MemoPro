@@ -23,7 +23,7 @@ name = "memopro-staging"
 [[kv_namespaces]]
 binding = "MEMO_KV"
 preview_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   # 预览环境 ID，可在 Dashboard 创建后获得
-id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"           # 生产环境 ID，可在 Dashboard 创建后获得
+id = "6c99e52eb0da4960bc9a0ef5630f298b"           # 生产环境 ID，可在 Dashboard 创建后获得
 
 # ----------------------
 # 定时任务触发器
