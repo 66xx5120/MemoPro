@@ -13,8 +13,8 @@ name = "memopro"
 # ----------------------
 # 预发布环境配置（可选）
 # ----------------------
-[env.staging]
-name = "memopro-staging"
+# [env.staging]
+# name = "memopro-staging"
 
 # ----------------------
 # KV 命名空间绑定
@@ -22,15 +22,15 @@ name = "memopro-staging"
 # ----------------------
 [[kv_namespaces]]
 binding = "MEMO_KV"
-preview_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   # 预览环境 ID，可在 Dashboard 创建后获得
+# preview_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   # 预览环境 ID，可在 Dashboard 创建后获得
 id = "6c99e52eb0da4960bc9a0ef5630f298b"           # 生产环境 ID，可在 Dashboard 创建后获得
 
 # ----------------------
 # 定时任务触发器
-# 根据提醒策略：每天 UTC 0点、12点、18点检查（可自行调整）
+# 根据提醒策略：每天UTC 0点、12点检查提醒（对应北京时间8点、20点，可自行调整）
 # ----------------------
 [triggers]
-crons = ["0 0,12,18 * * *"]
+crons = ["0 0,12 * * *"]
 
 # ----------------------
 # 环境变量（可选）
